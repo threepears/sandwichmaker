@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>Sandwich Maker</title>
+		<meta lang="en">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+		<div id="container">
+
+			<h1>The Deluxe-O-Matic Sandwich Builder</h1>
+
+			<div id="sidebar">
+				<div id="result">
+					<div id="letseat"></div>
+				</div>
+				<div id="pic">
+					<img src="https://www.colourbox.com/preview/3387082-big-sandwich-with-fresh-vegetables-on-wooden-board-black-background.jpg">
+				</div>
+			</div>
+
+			<div id="formnbutton">
+				<form>
+					<h3>Choose A Kind Of Bread</h3>
+					<input type="radio" name="bread" value="white"> White
+					<input type="radio" name="bread" value="wheat"> Wheat
+					<input type="radio" name="bread" value="rye"> Rye
+					<input type="radio" name="bread" value="pumpernickel"> Pumpernickel
+
+					<h3>Choose A Meat</h3>
+					<input type="radio" name="meat" value="turkey"> Turkey
+					<input type="radio" name="meat" value="ham"> Ham
+					<input type="radio" name="meat" value="roastbeef"> Roast Beef
+					<input type="radio" name="meat" value="chicken"> Chicken
+					<input type="radio" name="meat" value="nomeat"> No Meat
+
+					<h3>Choose A Kind Of Cheese</h3>
+					<input type="radio" name="cheese" value="american"> American
+					<input type="radio" name="cheese" value="swiss"> Swiss
+					<input type="radio" name="cheese" value="cheddar"> Cheddar
+					<input type="radio" name="cheese" value="mozzarella"> Mozzarella
+					<input type="radio" name="cheese" value="nocheese"> No Cheese
+
+					<h3>Choose Some Veggies</h3>
+					<input type="checkbox" name="veggies" value="lettuce"> Lettuce
+					<input type="checkbox" name="veggies" value="pickles"> Pickles
+					<input type="checkbox" name="veggies" value="blackolives"> Black Olives
+					<input type="checkbox" name="veggies" value="tomatoes"> Tomatoes
+					<input type="checkbox" name="veggies" value="noveggies"> No Veggies
+
+					<h3>Choose Some Condiments</h3>
+					<input type="checkbox" name="condiments" value="mustard"> Mustard
+					<input type="checkbox" name="condiments" value="mayonnaise"> Mayonnaise
+					<input type="checkbox" name="condiments" value="ketchup"> Ketchup
+					<input type="checkbox" name="condiments" value="teriyaki"> Teriyaki Sauce
+					<input type="checkbox" name="condiments" value="nocondiments"> No Condiments
+
+				</form>
+
+				<button type="button" id="maker">MAKE MY SANDWICH!</button>	
+			</div>
+
+		</div>
+
+		<script data-main="javascripts/entry" 
+         src="lib/bower_components/requirejs/require.js"></script>
+	</body>
+</html>
